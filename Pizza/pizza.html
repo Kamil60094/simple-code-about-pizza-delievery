@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <Legend>Menu:</Legend>
+        <Label>Pizza a: 39zl</Label><br>
+        <Label>Pizza b: 43zl</Label><br>
+        <Label>Pizza c: 32zl</Label><br>
+    </fieldset>
+    <br>
+    Jaką pizze wybierasz:<br> <input type="text" id="pizzachoice"><br>
+    Ile sztuk chcesz: <br> <input type="number" id="howmuch"><br>
+    <input type="radio" id="osiedlea" name="whereto" checked>Osiedle a(+10zl)<br>
+    <input type="radio" id="osiedleb" name="whereto">Osiedle b(+15zl)<br>
+    <input type="radio" id="osiedlec" name="whereto">Osiedle c(+20zl)<br>
+    <input type="submit" id="policz" value="Policz koszt" onclick="liczenie()"> 
+    <input id="reset" type="reset">
+    <p id="wynik">Koszt: </p>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
